@@ -7,6 +7,8 @@
         // box-shadow: inset 0em 1em gold;
         @include center_element;
         align-items: center;
+        box-shadow: inset 1px 2px 1px 0px #8c8b8b;
+
         i {
             font-size: 22px;
         }
@@ -20,12 +22,70 @@
         background-color: #eeeded;
         padding: 20px;
         text-align: center;
-        h2{
+        h2 {
             margin-bottom: 18px;
         }
-        p{
+        p {
             font-size: 17px;
             margin-bottom: 30px;
         }
     }
+}
+.steps {
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    padding: 20px;
+    h2 {
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    ol {
+        padding: 0 20px 20px;
+        list-style: none;
+        *list-style: decimal;
+        counter-reset: li;
+    }
+    &__item {
+        position: relative;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        background-color: #eeeded;
+        padding: 20px;
+        box-shadow: 1px 1px 5px 1px rgba(207, 207, 207, 0.46);
+        text-align: left;
+        cursor: pointer;
+        &:before {
+            content: counter(li);
+            counter-increment: li;
+            position: absolute;
+            left: -13px;
+            top: 50%;
+            color: #fff;
+            margin-top: -15px;
+            background: $colour-primary;
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            @include center_element;
+        }
+        &:hover {
+            background-color: #fcf0ff;
+        }
+        &:hover i {
+            color: $colour-primary;
+        }
+        span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        i {
+            margin: 0 25px;
+            color: #8c8b8b;
+        }
+    }
+}
+
+.restauration{
+    
 }

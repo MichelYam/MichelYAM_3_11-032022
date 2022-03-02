@@ -191,9 +191,9 @@ template {
 a {
     text-decoration: none;
 }
-li {
-    list-style: none;
-}
 input {
     outline: none;
+}
+ol{
+    list-style-type: decimal;
 }
