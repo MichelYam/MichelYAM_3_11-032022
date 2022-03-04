@@ -1,24 +1,27 @@
-@mixin heading-shadow($colour: lightness-shift($colour-primary), $offset: $heading-shadow-size) {
-    text-shadow: $offset $offset $colour;
-}
+// @mixin heading-shadow($colour: lightness-shift($colour-primary), $offset: $heading-shadow-size) {
+//     text-shadow: $offset $offset $colour;
+// }
 
-@mixin border($colour: $colour-primary) {
-    border: 0.1rem solid $colour;
-}
+// @mixin border($colour: $colour-primary) {
+//     border: 0.1rem solid $colour;
+// }
 
-@mixin img-ratio {
-    width: 100%;
-    display: block;
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
-    & img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        transform: translate(-50%, -50%);
-    }
+// @mixin img-ratio {
+//     width: 100%;
+//     display: block;
+//     overflow: hidden;
+//     padding-top: 56.25%;
+//     position: relative;
+//     & img {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         width: 100%;
+//         transform: translate(-50%, -50%);
+//     }
+// }
+@mixin border-raduis-card {
+    border-radius: 15px;
 }
 @mixin center_element {
     display: flex;
@@ -30,7 +33,7 @@
     // font-weight: bold;
     border: none;
     border-radius: 30px;
-    background: linear-gradient(175deg, $colour-secondary 0%, $colour-primary 100%);
+    background: linear-gradient(175deg, $color-secondary 0%, $color-primary 100%);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
     // &:hover {
     //     background: $colour-primary;
