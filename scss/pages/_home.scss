@@ -132,13 +132,14 @@
 
     &__favorite {
         position: absolute;
-        bottom: 21%;
-        right: 16%;
-        font-size: 14px;
+        bottom: 10%;
+        right: 11%;
+        font-size: 25px;
         i.heart-unfill {
             &:hover {
                 &:before {
                     transition: all 0.3s ease;
+                    background-clip: text;
                     -webkit-background-clip: text;
                     font-weight: 900;
                     background-image: linear-gradient(193deg, $color-primary 0%, $color-secondary 100%);
@@ -146,5 +147,30 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .steps {
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            li {
+                width: 45%;
+                &:first-child,
+                &:nth-of-type(2) {
+                    margin-bottom: 35px;
+                }
+            }
+        }
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .card {
+        min-width: 45%;
     }
 }
