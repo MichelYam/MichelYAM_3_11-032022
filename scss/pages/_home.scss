@@ -7,7 +7,7 @@
         // box-shadow: inset 0em 1em gold;
         @include center_element;
         align-items: center;
-        box-shadow: inset 1px 2px 1px 0px #8c8b8b;
+        box-shadow: inset 0px 1px 8px 0px rgba(0, 0, 0, 0.6);
 
         i {
             font-size: 22px;
@@ -167,10 +167,33 @@
     }
     .cards {
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
     }
     .card {
-        min-width: 45%;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .steps {
+        ol {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            li {
+                width: 30%;
+                margin-bottom: 35px;
+            }
+        }
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+    .card {
+        width: 23%;
     }
 }

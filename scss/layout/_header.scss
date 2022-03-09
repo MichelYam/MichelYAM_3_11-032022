@@ -1,4 +1,5 @@
 header {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,11 +14,17 @@ header {
             object-fit: cover;
         }
     }
+    .arrow {
+        position: absolute;
+        font-size: 23px;
+        left: 39px;
+        top: 39px;
+    }
 }
 
 @media screen and (min-width: 768px) {
-    header{
-        .logo{
+    header {
+        .logo {
             font-size: 1rem;
             padding: 20px;
         }

@@ -6,19 +6,17 @@
         flex-direction: column;
         color: #fff;
     }
-    // width: 100%;
     &__title {
         font-size: 20px;
         margin-bottom: 10px;
     }
     &__nav {
-        width: 100%;
         li {
             margin-bottom: 5px;
             a {
                 display: flex;
                 color: #fff;
-                i{
+                i {
                     width: 15px;
                     margin-right: 10px;
                 }
@@ -27,8 +25,20 @@
     }
 }
 
-// @media screen (max-width: 992px) {
-//     header{
+@media screen and (min-width: 768px) {
+    .footer {
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__nav {
+            display: flex;
+            li{
+                margin-right: 25px;
+            }
+        }
+    }
+}
 
-//     }
-// }

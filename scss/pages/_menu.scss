@@ -1,0 +1,111 @@
+.menu--img {
+    width: 100%;
+    position: relative;
+}
+
+.menu {
+    padding: 20px;
+    background-color: #eeeded;
+    position: relative;
+    border-radius: 32px 32px 0 0;
+    margin-top: -64px;
+    section {
+        margin-bottom: 45px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        margin: 17px 0;
+
+        i {
+            position: absolute;
+            right: 35px;
+            font-size: 25px;
+        }
+    }
+    &__title--categorie {
+        position: relative;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        &::before {
+            content: "";
+            width: 10%;
+            height: 3px;
+            background: $color-tertiary;
+            position: absolute;
+            left: 10px;
+            bottom: -7px;
+        }
+    }
+    .box-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .box {
+        display: flex;
+        border-radius: 15px;
+        max-width: 100%;
+        cursor: pointer;
+        background-color: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        &__container {
+            display: flex;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            flex: 1;
+            justify-content: space-between;
+        }
+        &__content {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding: 15px;
+        }
+        .price {
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding: 15px;
+        }
+        .check {
+            background-color: $color-tertiary;
+            @include center_element;
+            border-radius: 0 15px 15px 0;
+            margin: -16px -80px -16px 16px;
+            width: 64px;
+            transition-duration: 0.5s;
+            i {
+                border-radius: 50%;
+                color: $color-tertiary;
+                background-color: #fff;
+                padding: 5px;
+                transition-duration: 0.5s;
+                &::before {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        // animation
+        &:hover {
+            .check {
+                margin-right: 0;
+                i {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    &__btn {
+        @include center_element;
+        padding: 15px;
+        a{
+            
+            padding: 30px;
+        }
+    }
+}
