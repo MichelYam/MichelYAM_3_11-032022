@@ -1,6 +1,7 @@
 .menu--img {
+    max-height: 277px;
     width: 100%;
-    position: relative;
+    object-fit: cover;
 }
 
 .menu {
@@ -29,18 +30,27 @@
         padding-left: 10px;
         &::before {
             content: "";
+            position: absolute;
             width: 10%;
             height: 3px;
             background: $color-tertiary;
-            position: absolute;
             left: 10px;
             bottom: -7px;
+            @media screen and (min-width: 768px) {
+                width: 4%;
+            }
         }
     }
     .box-list {
         display: flex;
         flex-direction: column;
         row-gap: 15px;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 15px;
+        }
     }
     .box {
         display: flex;
@@ -50,6 +60,12 @@
         background-color: #fff;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         overflow: hidden;
+        @media screen and (min-width: 768px) {
+            width: 49%;
+        }
+        @media screen and (min-width: 1025px) {
+            width: calc(97% / 3);
+        }
         &__container {
             display: flex;
             white-space: nowrap;
@@ -103,8 +119,7 @@
     &__btn {
         @include center_element;
         padding: 15px;
-        a{
-            
+        a {
             padding: 30px;
         }
     }

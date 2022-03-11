@@ -5,40 +5,35 @@
         display: flex;
         flex-direction: column;
         color: #fff;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
     &__title {
         font-size: 20px;
         margin-bottom: 10px;
     }
     &__nav {
-        li {
-            margin-bottom: 5px;
-            a {
-                display: flex;
-                color: #fff;
-                i {
-                    width: 15px;
-                    margin-right: 10px;
-                }
-            }
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    li {
+        margin-bottom: 5px;
+        @media screen and (min-width: 768px) {
+            margin-right: 25px;
+        }
+    }
+    a {
+        display: flex;
+        color: #fff;
+        i {
+            width: 15px;
+            margin-right: 10px;
         }
     }
 }
-
-@media screen and (min-width: 768px) {
-    .footer {
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        &__nav {
-            display: flex;
-            li{
-                margin-right: 25px;
-            }
-        }
-    }
-}
-
