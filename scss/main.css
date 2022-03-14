@@ -438,9 +438,12 @@ header .arrow {
   max-width: 100%;
   cursor: pointer;
   background-color: #fff;
+  -webkit-animation: revealAnimation 1.5s cubic-bezier(0.5, 0, 0, 1) forwards;
+          animation: revealAnimation 1.5s cubic-bezier(0.5, 0, 0, 1) forwards;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -546,6 +549,51 @@ header .arrow {
 
 .menu__btn a {
   padding: 30px;
+}
+
+.box.delay-1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.box.delay-2 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.box.delay-3 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.box.delay-4 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.box.delay-5 {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.box.delay-6 {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.box.delay-7 {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+.box.delay-8 {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.box.delay-9 {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
 }
 
 .reservation {
@@ -803,6 +851,32 @@ header .arrow {
   }
   .card {
     width: 23%;
+  }
+}
+
+@-webkit-keyframes revealAnimation {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes revealAnimation {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=main.css.map */
