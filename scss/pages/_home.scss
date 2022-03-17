@@ -4,11 +4,8 @@
     &__example {
         width: 100%;
         background-color: #e6e4e4;
-        // box-shadow: inset 0em 1em gold;
         @include center_element;
         align-items: center;
-        // box-shadow: inset 0px 1px 8px 0px rgba(0, 0, 0, 0.6);
-
         i {
             font-size: 22px;
         }

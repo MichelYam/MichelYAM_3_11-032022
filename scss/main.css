@@ -293,10 +293,10 @@ ol {
 }
 
 .footer__title {
-  font-weight: 400;
+  font-weight: 800;
   font-size: 20px;
   margin-bottom: 20px;
-  font-family: "Shrikhand", cursive;
+  font-family: "Shrikhand";
 }
 
 @media screen and (min-width: 768px) {
@@ -305,6 +305,10 @@ ol {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.footer__text {
+  font-size: 17px;
 }
 
 .footer li {
@@ -325,7 +329,7 @@ ol {
 }
 
 .footer a i {
-  width: 15px;
+  width: 20px;
   margin-right: 10px;
 }
 

@@ -13,17 +13,19 @@
         }
     }
     &__title {
-        font-weight: 400;
+        font-weight: 800;
         font-size: 20px;
         margin-bottom: 20px;
-        font-family: "Shrikhand", cursive;
+        font-family: "Shrikhand";
     }
     &__nav {
         @media screen and (min-width: 768px) {
             display: flex;
         }
     }
-
+    &__text{
+        font-size: 17px;
+    }
     li {
         margin-bottom: 10px;
         @media screen and (min-width: 768px) {
@@ -34,7 +36,7 @@
         display: flex;
         color: #fff;
         i {
-            width: 15px;
+            width: 20px;
             margin-right: 10px;
         }
     }
