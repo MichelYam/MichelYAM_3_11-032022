@@ -5,13 +5,15 @@
 
 @import "./base/base";
 @import "./base/typography";
-@import "./base/normalize";
+
+@import "./vendors/normalize";
 
 @import "./components/buttons";
+@import "./components/heart";
 
 @import "./layout/footer";
 @import "./layout/header";
+@import "./layout/menu";
 
-@import "./pages/menu";
 @import "./pages/home";
 @import "./pages/animation";
