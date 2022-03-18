@@ -13,7 +13,7 @@
         }
     }
     &__title {
-        font-weight: 800;
+        font-weight: 400;
         font-size: 20px;
         margin-bottom: 20px;
         font-family: "Shrikhand";
@@ -28,12 +28,16 @@
     }
     li {
         margin-bottom: 10px;
+        &:hover a{
+            color: $color-primary;
+        }
         @media screen and (min-width: 768px) {
             margin-right: 25px;
         }
     }
     a {
         display: flex;
+        transition: 0.3s ease-in-out;
         color: #fff;
         i {
             width: 20px;

@@ -30,15 +30,17 @@
 }
 @mixin btn {
     padding: 20px;
-    // font-weight: bold;
     border: none;
     border-radius: 30px;
     background: linear-gradient(175deg, $color-secondary 0%, $color-primary 100%);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-    // &:hover {
-    //     background: $colour-primary;
-    //     color: $colour-accent;
-    // }
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.3);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.9);
+
+    }
     // &--full-width {
     //     width: 100%;
     //     margin: 0 auto;

@@ -9,13 +9,13 @@
     }
 }
 .menu {
-    padding: 20px;
+    padding: 20px 20px 70px 20px;
     background-color: #f4f4f4;
     position: relative;
     border-radius: 32px 32px 0 0;
     margin-top: -200px;
     @media screen and (min-width: 1025px) {
-        width: 90%;
+        width: 70%;
         margin: -164px auto 0;
     }
     section {
@@ -34,15 +34,17 @@
     }
     &__title--categorie {
         position: relative;
+        font-size: 16px;
         margin-bottom: 20px;
-        padding-left: 10px;
+        padding-left: 7px;
+        font-weight: 400;
         &::before {
             content: "";
             position: absolute;
             width: 50px;
             height: 3px;
             background: $color-tertiary;
-            left: 10px;
+            left: 7px;
             bottom: -7px;
         }
     }
@@ -75,20 +77,15 @@
         &__container {
             display: flex;
             flex: 1;
-            white-space: nowrap;
-            text-overflow: ellipsis;
             overflow: hidden;
             justify-content: space-between;
             padding: 15px;
         }
         &__content {
-            white-space: nowrap;
-            text-overflow: ellipsis;
             overflow: hidden;
-
             h3 {
-                white-space: nowrap;
-                text-overflow: ellipsis;
+                // white-space: nowrap;
+                // text-overflow: ellipsis;
                 overflow: hidden;
             }
             p {
@@ -139,7 +136,6 @@
     }
     &__btn {
         @include center_element;
-        padding: 15px;
         a {
             padding: 30px;
         }
