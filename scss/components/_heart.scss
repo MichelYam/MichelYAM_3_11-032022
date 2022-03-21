@@ -1,8 +1,17 @@
 .heart-unfill {
     cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &::before {
+        transition: 0.5s ease-in-out;
+        background-color: #fff;
+    }
     &:hover {
+        transition: 0.5s ease-in-out;
+
         &:before {
-            transition: all 0.25s ease-in-out;
+            transition: 0.5s ease-in-out;
+
             background-clip: text;
             -webkit-background-clip: text;
             font-weight: 900;

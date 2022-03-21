@@ -114,7 +114,6 @@
                 color: $color-tertiary;
                 background-color: #fff;
                 padding: 5px;
-                transition-duration: 0.5s;
                 &::before {
                     font-size: 16px;
                 }
@@ -129,7 +128,7 @@
                 transition-duration: 0.5s;
                 @include center_element;
                 i {
-                    transform: rotate(360deg);
+                    animation: animate 0.5s ease-in-out;
                 }
             }
         }

@@ -255,11 +255,24 @@ ol {
 
 .heart-unfill {
   cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.heart-unfill::before {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+.heart-unfill:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .heart-unfill:hover:before {
-  -webkit-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: 900;
@@ -575,8 +588,6 @@ header .arrow {
   color: #99E2D0;
   background-color: #fff;
   padding: 5px;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
 }
 
 .menu .box .check i::before {
@@ -605,8 +616,8 @@ header .arrow {
 }
 
 .menu .box:hover .check i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  -webkit-animation: animate 0.5s ease-in-out;
+          animation: animate 0.5s ease-in-out;
 }
 
 .menu__btn {
@@ -1114,23 +1125,23 @@ header .arrow {
 
 @-webkit-keyframes animate {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
 @keyframes animate {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
   }
 }
 
