@@ -445,6 +445,11 @@ header .arrow {
   margin: 17px 0;
 }
 
+.menu__header h2 {
+  font-family: "Shrikhand";
+  font-size: 27px;
+}
+
 .menu__header__heart {
   position: absolute;
   right: 35px;

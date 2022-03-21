@@ -25,7 +25,10 @@
         display: flex;
         justify-content: space-between;
         margin: 17px 0;
-
+        h2{
+            font-family: "Shrikhand";
+            font-size: 27px;
+        }
         &__heart {
             position: absolute;
             right: 35px;
