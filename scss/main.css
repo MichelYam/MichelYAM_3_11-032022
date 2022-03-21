@@ -258,8 +258,8 @@ ol {
 }
 
 .heart-unfill:hover:before {
-  -webkit-transition: all 0.8s ease-out;
-  transition: all 0.8s ease-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   background-clip: text;
   -webkit-background-clip: text;
   font-weight: 900;
@@ -707,6 +707,39 @@ header .arrow {
   padding: 20px;
 }
 
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.row section {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .row section {
+    width: 50%;
+  }
+}
+
 .reservation {
   background-color: #f4f4f4;
   padding: 20px;
@@ -724,6 +757,7 @@ header .arrow {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .reservation h2 {
@@ -765,12 +799,12 @@ header .arrow {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -780,7 +814,7 @@ header .arrow {
   position: relative;
   margin-bottom: 20px;
   border-radius: 20px;
-  background-color: #eeeded;
+  background-color: #f4f4f4;
   padding: 30px 20px 20px 20px;
   -webkit-box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.125);
@@ -800,8 +834,8 @@ header .arrow {
 
 @media screen and (min-width: 1024px) {
   .steps__item {
-    width: calc(95% / 3);
-    margin-bottom: 35px;
+    width: 75%;
+    margin: 0 auto 35px auto;
   }
 }
 
@@ -851,7 +885,7 @@ header .arrow {
 
 .restaurants {
   padding: 20px;
-  background-color: #eeeded;
+  background-color: #f4f4f4;
 }
 
 .restaurants h2 {
@@ -1110,6 +1144,7 @@ header .arrow {
   }
   100% {
     visibility: hidden;
+    opacity: 0.9;
   }
 }
 
@@ -1123,6 +1158,7 @@ header .arrow {
   }
   100% {
     visibility: hidden;
+    opacity: 0.9;
   }
 }
 /*# sourceMappingURL=main.css.map */

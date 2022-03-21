@@ -2,7 +2,7 @@
     cursor: pointer;
     &:hover {
         &:before {
-            transition: all 0.8s ease-out;
+            transition: all 0.25s ease-in-out;
             background-clip: text;
             -webkit-background-clip: text;
             font-weight: 900;
