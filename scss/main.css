@@ -382,6 +382,10 @@ ol {
   margin-right: 10px;
 }
 
+.footer a i::before {
+  width: 10px;
+}
+
 header {
   position: relative;
   -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.25);
