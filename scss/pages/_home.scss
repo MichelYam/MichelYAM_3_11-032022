@@ -214,6 +214,8 @@
         border-radius: 5px;
     }
     &__container {
+        display: flex;
+        justify-content: space-between;
         padding: 15px;
     }
     &__description {
@@ -221,12 +223,7 @@
             margin-top: 5px;
         }
     }
-    &__favorite {
-        position: absolute;
-        bottom: 10%;
-        right: 11%;
-        font-size: 25px;
-    }
+
 }
 .loader {
     height: 100%;

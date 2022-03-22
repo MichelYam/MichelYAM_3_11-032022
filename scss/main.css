@@ -253,30 +253,51 @@ ol {
   padding: 20px 35px;
 }
 
-.heart-unfill {
+.heart {
+  position: relative;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 25px;
+}
+
+.heart i {
+  position: absolute;
+  left: 10%;
+}
+
+.heart .fas {
+  opacity: 0;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.heart:hover .fas {
+  opacity: 1;
+}
+
+.heart .far {
+  opacity: 1;
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+.heart:hover .far {
+  opacity: 0;
+}
+
+.heart-fill {
   cursor: pointer;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.heart-unfill::before {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  background-color: #fff;
-}
-
-.heart-unfill:hover {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-.heart-unfill:hover:before {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  background: linear-gradient(193deg, #9356DC 0%, #FF79DA 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  font-weight: 900;
-  background-image: linear-gradient(193deg, #9356DC 0%, #FF79DA 100%);
   -webkit-text-fill-color: transparent;
 }
 
@@ -1016,18 +1037,17 @@ header .arrow {
 }
 
 .card__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px;
 }
 
 .card__description p {
   margin-top: 5px;
-}
-
-.card__favorite {
-  position: absolute;
-  bottom: 10%;
-  right: 11%;
-  font-size: 25px;
 }
 
 .loader {
