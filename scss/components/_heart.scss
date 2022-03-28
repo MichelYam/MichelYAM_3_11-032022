@@ -1,31 +1,68 @@
+// .heart {
+//     position: relative;
+//     right: 30px;
+//     @include center_element;
+//     font-size: 25px;
+//     i {
+//         position: absolute;
+//         left: 10%;
+//     }
+//     .fas {
+//         position: absolute;
+//         opacity: 0;
+//         transition: all .5s;
+//     }
+//     &:hover .fas {
+//         opacity: 1;
+//         // top: 0px;
+//     }
+//     .far {
+//         top: 0px;
+//         opacity: 1;
+//         transition: all .5s;
+//     }
+//     &:hover .far {
+//         top: 60px;
+//         opacity: 0;
+//     }
+// }
+// .heart-fill {
+//     cursor: pointer;
+//     background: linear-gradient(193deg, $color-primary 0%, $color-secondary 100%);
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
 .heart {
     position: relative;
-    right: 30px;
-    @include center_element;
-    font-size: 25px;
+    height: 50px;
+    width: 80px;
     i {
         position: absolute;
         left: 10%;
     }
-    .fas {
-        opacity: 0;
-        transition: all 500ms ease-in-out;
+    .heart-fill {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 0px;
+        transform: translate3d(-50%, -50%, 0);
+        transition: all 1s;
+        cursor: pointer;
+        background: linear-gradient(193deg, $color-primary 0%, $color-secondary 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    &:hover .fas {
-        opacity: 1;
+    &:hover .heart-fill {
+        font-size: 26px;
     }
-    .far {
-        opacity: 1;
-        transition: all 500ms ease-in-out;
+    .heart-unfill {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        font-size: 25px;
+        transition: all 1s;
     }
-    &:hover .far {
-        opacity: 0;
-    }
-}
-.heart-fill {
-    cursor: pointer;
-    background: linear-gradient(193deg, $color-primary 0%, $color-secondary 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }

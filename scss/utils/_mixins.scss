@@ -6,20 +6,6 @@
 //     border: 0.1rem solid $colour;
 // }
 
-// @mixin img-ratio {
-//     width: 100%;
-//     display: block;
-//     overflow: hidden;
-//     padding-top: 56.25%;
-//     position: relative;
-//     & img {
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         width: 100%;
-//         transform: translate(-50%, -50%);
-//     }
-// }
 @mixin border-raduis-card {
     border-radius: 15px;
 }
