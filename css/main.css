@@ -542,7 +542,7 @@ header .arrow {
 
 @media screen and (min-width: 1025px) {
   .menu {
-    width: 80%;
+    width: 95%;
     margin: -164px auto 0;
   }
 }
