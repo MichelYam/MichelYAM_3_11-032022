@@ -228,6 +228,7 @@ ol {
 }
 
 .btn {
+  font-family: inherit;
   padding: 20px;
   border: none;
   border-radius: 30px;
@@ -236,6 +237,7 @@ ol {
           box-shadow: 0 0 11px rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -243,10 +245,6 @@ ol {
   opacity: 0.8;
   -webkit-box-shadow: 0 0 11px rgba(0, 0, 0, 0.9);
           box-shadow: 0 0 11px rgba(0, 0, 0, 0.9);
-}
-
-.btn a {
-  color: #fff;
 }
 
 .btn.order {
