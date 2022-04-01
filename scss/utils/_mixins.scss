@@ -1,11 +1,3 @@
-// @mixin heading-shadow($colour: lightness-shift($colour-primary), $offset: $heading-shadow-size) {
-//     text-shadow: $offset $offset $colour;
-// }
-
-// @mixin border($colour: $colour-primary) {
-//     border: 0.1rem solid $colour;
-// }
-
 @mixin border-raduis-card {
     border-radius: 15px;
 }
@@ -29,7 +21,4 @@
     box-shadow: 0 0 11px rgba(0, 0, 0, 0.9);
 
     }
-    // a {
-    //     color: #fff;
-    // }
 }
